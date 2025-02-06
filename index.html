@@ -9,34 +9,70 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Social links profile</title>
   </head>
-  <body>
-    <main>
-      <div class="ImgContainer">
-        <img src="./assets/images/avatar-jessica.jpeg" alt="" />
+  <body
+    class="flex flex-col items-center justify-center p-4 text-center text-white bg-body font-inter min-h-dvh"
+  >
+    <main
+      class="p-4 m-auto bg-main w-full max-w-[22rem] flex flex-col justify-center items-center gap-4 rounded-2xl"
+    >
+      <h1 class="sr-only">Social Links Profile</h1>
+      <div>
+        <img
+          src="./assets/images/avatar-jessica.jpeg"
+          alt="Jessica"
+          class="w-20 max-w-full rounded-full"
+        />
       </div>
-      <div class="Text">
-        <h1>Bello Ibrahim</h1>
-        <h4>Lagos, Nigeria</h4>
-        <p>"Front-End Developer and avid reader"</p>
+      <div class="grid gap-2 mt-2">
+        <h2 class="text-2xl font-bold">Bello Ibrahim</h2>
+        <p class="text-hover-green">Lagos, Nigeria</p>
+        <p class="mt-4 text-sm"><q>Front-End Developer and avid reader</q></p>
       </div>
-      <div class="links">
-        <a href="https://github.com/repro123" target="_blank">Github</a>
-        <a href="https://frontendmentor.io/repro123" target="_blank"
-          >Frontend Mentor</a
-        >
-        <a href="#">LinkedIn</a>
-        <a href="https://x.com/Dr_Repro" target="_blank">Twitter</a>
-        <a href="#">Instagram</a>
-      </div>
+      <ul
+        class="flex flex-col items-center justify-center w-full gap-4 mt-4 list-none"
+      >
+        <li>
+          <a href="https://github.com/repro123" target="_blank" class="btn"
+            >Github</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://frontendmentor.io/repro123"
+            target="_blank"
+            class="btn"
+            >Frontend Mentor</a
+          >
+        </li>
+        <li><a href="#" class="btn">LinkedIn</a></li>
+        <li>
+          <a href="https://x.com/Dr_Repro" target="_blank" class="btn"
+            >Twitter</a
+          >
+        </li>
+        <li><a href="#" class="btn">Instagram</a></li>
+      </ul>
     </main>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Bello Ibrahim</a>.
-    </div>
+    <footer class="mt-auto text-sm">
+      <p>
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="underline cursor-pointer text-hover-green"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://github.com/repro123"
+          target="_blank"
+          class="underline cursor-pointer text-hover-green"
+          >Bello Ibrahim</a
+        >
+      </p>
+    </footer>
   </body>
 </html>

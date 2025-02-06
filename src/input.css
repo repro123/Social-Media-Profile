@@ -1,0 +1,19 @@
+@import url(https://fonts.google.com/specimen/Inter);
+@import "tailwindcss";
+
+@theme {
+  --color-body: hsl(0, 0%, 8%);
+  --color-main: hsl(0, 0%, 12%);
+  --color-links: hsl(0, 0%, 20%);
+  --color-hover-green: hsl(75, 94%, 57%);
+
+  --font-inter: "Inter", sans-serif;
+}
+
+li {
+  @apply w-full;
+}
+
+.btn {
+  @apply block w-full py-2 rounded-lg cursor-pointer bg-links hover:bg-hover-green hover:text-body;
+}
