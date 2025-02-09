@@ -15,10 +15,5 @@ li {
 }
 
 .btn {
-  @apply block w-full py-2 rounded-lg cursor-pointer bg-links transition-colors duration-200;
-  /* desktop hover */
-  @apply hover:bg-hover-green hover:text-body;
-  /* mobile touch states */
-  @apply active:bg-hover-green active:text-body;
-  @apply focus:bg-hover-green focus:text-body;
+  @apply block w-full py-2 transition-colors duration-200 rounded-lg cursor-pointer bg-links hover:bg-hover-green hover:text-body active:bg-hover-green active:text-body focus:bg-hover-green focus:text-body;
 }
